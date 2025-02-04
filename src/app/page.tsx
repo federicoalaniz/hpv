@@ -1,10 +1,8 @@
 'use client'
 import Hero from "@/components/Hero";
 import ImageGallery from "@/components/ImageGallery";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const router = useRouter();
   return (
     <div>
 
@@ -14,7 +12,7 @@ export default function Home() {
             className="bg-white text-green-600 bg-opacity-60  
                       text-4xl sm:text-3xl md:text-5xl lg:text-7xl  
                       px-6 sm:px-8 md:px-12 py-12 sm:py  
-                      rounded-lg max-w-4xl text-center" >
+                      rounded-lg max-w-4xl text-center backdrop-blur-sm" >
             <h1>
               Bienvenido a <br /> <span className="font-semibold">Hospital Privado de la Villa</span>
             </h1>
@@ -35,7 +33,7 @@ export default function Home() {
           Recuerda llegar con 15 minutos de anticipación y traer tu documento de identidad y estudios previos, si es necesario.
         </p>
         <div className="flex justify-end">
-          <button className="bg-green-600 text-white w-full sm:w-1/2 md:w-1/2 lg:w-1/4 py-2 font-semibold text-lg sm:text-xl rounded-md hover:bg-opacity-90" onClick={()=> router.push('https://turnos.hospitaldelavilla.com.ar/')}>
+          <button className="bg-green-600 text-white w-full sm:w-1/2 md:w-1/2 lg:w-1/4 py-2 font-semibold text-lg sm:text-xl rounded-md hover:bg-opacity-90" onClick={()=> window.open('https://turnos.hospitaldelavilla.com.ar/', '_blank')}>
             Reservar Turno OnLine
           </button>
         </div>

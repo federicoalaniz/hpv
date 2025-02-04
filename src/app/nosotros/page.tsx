@@ -10,7 +10,7 @@ const Nosotros = () => {
                         className="bg-white text-green-600 bg-opacity-60  
                             text-4xl sm:text-3xl md:text-5xl lg:text-7xl  
                             px-6 sm:px-8 md:px-12 py-12 sm:py  
-                            rounded-lg max-w-4xl text-center ml-0">
+                            rounded-lg max-w-4xl text-center ml-0 backdrop-blur-sm">
                         <h1>
                             Bienvenido a <br /> <span className="font-semibold">Hospital Privado de la Villa</span>
                         </h1>
@@ -33,50 +33,6 @@ const Nosotros = () => {
                 </p>
 
             </section>
-
-            {/* <section
-                className="relative bg-gray-400 px-8 sm:px-16 md:px-24 xl:px-[250px] 2xl:px-[350px] py-8
-                bg-[url('/tomografo.jpeg')] bg-cover bg-center"
-            >
-                <div className="text-white flex flex-col items-center">
-                    <div className="grid grid-cols-2 gap-6">
-                        <div>
-                            <h2 className="text-green-700 text-3xl font-semibold">Misión</h2>
-                            <p className="text-white text-[18px] text-justify bg-black bg-opacity-30 p-4 rounded-md">
-                                Brindar atención médica y humana de calidad, pensada y orientada al paciente, a través de un equipo de profesionales y colaboradores que trabajan en conjunto para que el resultado sea un servicio que esté a la altura de las necesidades del paciente.
-                            </p>
-                        </div>
-                        <div>
-                            <h2 className="text-green-700 text-3xl font-semibold">Visión</h2>
-                            <p className="text-white text-[18px] text-justify bg-black bg-opacity-30 p-4 rounded-md">
-                                Incrementar nuestra capacidad de atención actual en un 30% para los próximos 2 años, buscando mejorar la calidad de la atención brindada en todos sus aspectos; médico, humano y confort.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="flex flex-col items-center mt-6 w-full">
-                        <h2 className="text-green-700 text-3xl font-semibold text-center">Autoridades</h2>
-
-                        <div className="grid md:grid-cols-2 gap-4 text-white text-[18px] bg-black bg-opacity-30 p-4 rounded-md ">
-                            <div className="text-left ">
-                                <h3 className="font-bold">Gerencia:</h3>
-                                <ul className="list-disc list-inside">
-                                    <li>Dr. Gariglio Jorge</li>
-                                    <li>Dr. Edelstein Pablo</li>
-                                    <li>Dr. Aban Marcelo Jorge</li>
-                                    <li>Dr. Gandino Santiago</li>
-                                </ul>
-                            </div>
-                            <div className="text-left ">
-                                <h3 className="font-bold">Dirección Médica:</h3>
-                                <ul className="list-disc list-inside">
-                                    <li>Dr. García Andrés</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section> */}
             <section
                 className="relative bg-gray-400 px-6 sm:px-12 md:px-20 xl:px-[150px] 2xl:px-[250px] py-12
                 bg-[url('/tomografo.jpeg')] bg-cover bg-center"
@@ -89,13 +45,13 @@ const Nosotros = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                         <div>
                             <h2 className="text-green-700 text-3xl font-semibold text-center md:text-left">Misión</h2>
-                            <p className="text-white text-[18px] text-justify bg-black bg-opacity-40 p-4 rounded-md">
+                            <p className="text-white text-[18px] text-justify bg-black bg-opacity-40 p-4 rounded-md backdrop-blur-md">
                                 Brindar atención médica y humana de calidad, pensada y orientada al paciente, a través de un equipo de profesionales y colaboradores que trabajan en conjunto para que el resultado sea un servicio que esté a la altura de las necesidades del paciente.
                             </p>
                         </div>
                         <div>
                             <h2 className="text-green-700 text-3xl font-semibold text-center md:text-left">Visión</h2>
-                            <p className="text-white text-[18px] text-justify bg-black bg-opacity-40 p-4 rounded-md">
+                            <p className="text-white text-[18px] text-justify bg-black bg-opacity-40 p-4 rounded-md backdrop-blur-md">
                                 Incrementar nuestra capacidad de atención actual en un 30% para los próximos 2 años, buscando mejorar la calidad de la atención brindada en todos sus aspectos; médico, humano y confort.
                             </p>
                         </div>
@@ -105,7 +61,7 @@ const Nosotros = () => {
                     <div className="flex flex-col items-center mt-8 w-full">
                         <h2 className="text-green-700 text-3xl font-semibold text-center">Autoridades</h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-white text-[18px] bg-black bg-opacity-40 p-6 rounded-md max-w-[700px] w-full mx-auto md:w-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-white text-[18px] bg-black bg-opacity-40 p-6 rounded-md max-w-[700px] w-full mx-auto md:w-auto backdrop-blur-md">
                             <div className="text-left">
                                 <h3 className="font-bold">Gerencia:</h3>
                                 <ul className="list-disc list-inside">
