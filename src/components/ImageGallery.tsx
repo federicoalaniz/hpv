@@ -33,7 +33,7 @@ const ImageGallery = () => {
                         width={400}
                         height={100}
                         alt={`Imagen ${index + 1}`}
-                        className="rounded-md opacity-50 hover:opacity-100 duration-200 cursor-pointer hover:shadow-lg hover:shadow-gray-200"
+                        className="rounded-md opacity-100 md:opacity-50 hover:opacity-100 duration-200 cursor-pointer hover:shadow-lg hover:shadow-gray-200"
                         onClick={() => openCarousel(index)}
                     />
                 ))}
