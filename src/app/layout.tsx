@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto_Condensed } from 'next/font/google';
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const robotoCondensed = Roboto_Condensed({
+  subsets: ['latin'], // Define los caracteres necesarios (opcional)
+  weight: ['400', '700'], // Define los pesos que necesitas
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +23,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${robotoCondensed.className}  antialiased`}
       >
+        <Navbar/>
         {children}
+        {/* Footer */}
+        {/* <section id="footer" className=" text-gray-100 py-3 text-center text-sm">
+          <p >Desarrollado por: Federico Alaniz - 2657660312 - Propiedad: Hospital Privado de la Villa</p>
+        </section> */}
+        <Footer/>
       </body>
     </html>
   );
