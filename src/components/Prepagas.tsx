@@ -68,7 +68,7 @@ const Prepagas = () => {
             {
                 prepagas.map((prepaga) => {
                     return (
-                        <div className="flex flex-wrap md:flex-nowrap justify-center items-center py-2 border-b border-gray-300 last:border-none">
+                        <div className="flex flex-wrap md:flex-nowrap justify-center items-center py-2 border-b border-gray-300 last:border-none" key={prepaga.code}>
                             <div className="w-full md:w-3/12 font-bold text-sm md:text-lg lg:text-xl text-center md:text-left">
                                 {prepaga.code}
                             </div>
