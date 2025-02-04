@@ -30,7 +30,7 @@ const Footer = () => {
                             <Image src={'/icons/location-dot-solid.svg'} alt="Ubicación" width={16} height={16} />
                             <span>Balcarce 1040 - Villa Mercedes, San Luis</span>
                         </div>
-                        <div className="flex items-center gap-2 cursor-pointer" onClick={() => router.push('https://www.instagram.com/hospitalprivadodela/')}>
+                        <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.open('https://www.instagram.com/hospitalprivadodela/', '_blank')}>
                             <Image src={'/icons/instagram-brands-solid.svg'} alt="Instagram" width={16} height={16} />
                             <span className="">Visitá nuestro Instagram</span>
                         </div>
